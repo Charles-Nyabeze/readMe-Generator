@@ -1,4 +1,6 @@
-const inquirer = require("inquirer");
+const inquirer = require('inquirer');
+const generatePage  = require("./src/read-template.js");
+const { writeFile } = require("./utils/generate-read.js");
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -144,5 +146,17 @@ const promptReadMe = (readMeData) => {
     
 }
 
+promptUser()
+  .then(promptReadMe)
+  .then(ReadMeData => {
+    return generatePage(ReadMeData);
+  })
+  .then(readMeMarkdown => {
+    return writeFile(readMeMarkdown);
+  })
+  .catch(err => {
+    console.log(err);
+  })
 
-module.exports =  {promptUser, promptReadMe} ;
+  
+
