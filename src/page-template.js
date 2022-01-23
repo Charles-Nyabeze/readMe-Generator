@@ -1,16 +1,6 @@
 const generateProjects = (projectsArr) => {
     return `
-        ${projectsArr.map(
-          ({
-            description,
-            installation,
-            usage,
-            license,
-            contribution,
-            test,
-            email,
-            github,
-          }) => {
+        ${projectsArr.map(({description, installation, usage, license, contribution, test, email, github}) => {
             return `
   ![GitHub license](https://img.shields.io/static/v1?label=License&message=${license}&color=blue&style=for-the-badge)
   # Description
@@ -57,6 +47,5 @@ const generateProjects = (projectsArr) => {
     const { projects, ...header } = templateData
     return `
   # ${header.title}
-  ${generateProjects(projects)}
-    `;
-  };
+  ${generateProjects(projects)}`
+  }

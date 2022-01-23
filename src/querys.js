@@ -135,8 +135,14 @@ const promptReadMe = (readMeData) => {
               },
 
         },
-    ])
+    ]).then((projectData) => {
+        readMeData.projects.push(projectData);
+        if (projectData) {
+          return readMeData;
+        }
+      });
     
 }
+
 
 module.exports =  {promptUser, promptReadMe} ;

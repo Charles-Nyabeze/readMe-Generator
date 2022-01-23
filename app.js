@@ -2,11 +2,11 @@
 // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 const generatePage  = require("./src/page-template.js");
 const { writeFile } = require("./utils/generate-read.js");
-const { promptUser, promptReadMeGen } = require("./src/querys.js")
+const { promptUser, promptReadMe } = require("./src/querys.js")
 
 
 promptUser()
-  .then(promptReadMeGen)
+  .then(promptReadMe)
   .then(readMeData => {
     return generatePage(readMeData);
   })
