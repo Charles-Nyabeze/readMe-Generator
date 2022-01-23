@@ -21,7 +21,7 @@ Use this application to generate your own readme by cloning the repository and r
 
 # Usage
 
-![walkthrough](./images/readme-generator-for-developers-walkthrough.gif)  
+![walkthrough](./images/)  
 
 When you run node index.js in your terminal, you will be prompted to answer a series of questions. Once all questions are answered please navigate to the dist folder as it will house the markdown file that your responses will be stored to. Make sure to open a preview of your new README to ensure that everything is spelled correctly and that the links to your GitHub page and email are functional otherwise you will need to run the application again and reinput the correct information.
 
