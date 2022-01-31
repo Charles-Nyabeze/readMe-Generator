@@ -20,7 +20,7 @@ Use this application to generate a readme file by cloning the repository and run
 
 # Usage
 
-![walkthrough](./images/)  
+https://user-images.githubusercontent.com/90402466/151733108-f1010af1-23b6-4441-835d-a4ff6ffcdaaf.mp4
 
 When you run node index in your terminal, you will be made to answer a series of questions. Once all questions are answered navigate to the dist folder as it will house the readme file that your responses will be stored to. Open a preview of your new README and ensure that everything is spelled correctly and that the links to your GitHub page and email work otherwise you will need to run the application again and reinput the correct information.
 
